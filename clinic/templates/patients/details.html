@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% load widget_tweaks %}
+
+{% block content %}
+    <p>{{ pat.name }}</p>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>patient</th>
+        <th>created by</th>
+        <th>created at</th>
+        <th>title</th>
+        <th>text</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for record in rec %}
+        <tr>
+          <td>{{ record.patient.name }}</td>
+          <td>{{ record.created_by }}</td>
+          <td>{{ record.created_at }}</td>
+          <td>{{ record.title }}</td>
+          <td>{{ record.text }}</td>
+        </tr>
+      {% empty %}
+        <tr>
+          <td colspan="5">No data</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+    <a class="btn btn-primary" href="{% url 'addrec' pk=pat.id %}" role="button">add record</a>
+
+{% endblock %}

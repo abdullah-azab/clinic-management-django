@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1 class="page-header">home</h1>
+    <a class="btn btn-primary" href="{% url 'docer' %}" role="button">test doctor</a>
+    <a class="btn btn-primary" href="{% url 'recer'  %}" role="button">test receptionest</a>
+    <a class="btn btn-primary" href="{% url 'login'  %}" role="button">login</a>
+{% endblock %}
