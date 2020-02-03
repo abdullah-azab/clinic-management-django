@@ -13,7 +13,10 @@ this is my ferst django app implementing this [SRS](Documentation/SRS.pdf) this 
   - demo deployed on pythonanywhere.com .
 
 
+### Todos
 
+ - improve front end
+ 
 
 License
 ----
