@@ -1,6 +1,6 @@
 # clinic-management-django
 
-this is my ferst django app implementing this [SRS](Documentation/SRS.pdf) this app includes:
+this is a django app implementing this [SRS](Documentation/SRS.pdf) this app includes:
 
   - multiable user types with defferant access privileges.
   - patient search feature.
