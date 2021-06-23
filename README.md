@@ -12,10 +12,6 @@ this is a django app implementing this [SRS](Documentation/SRS.pdf), this app in
   - see a live demo of this project [here](http://aazsniper.pythonanywhere.com/).
  
 
-### Todos
-
- - improve front end
- 
 
 License
 ----
